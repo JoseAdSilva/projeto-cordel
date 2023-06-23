@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: passionr;
+    src: url(fontes/PassionOne-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: passionb;
+    src: url('fontes/PassionOne-Bold.ttf') format(truetype);
+}
+@font-face {
+    font-family: passionb;
+    src: url(fontes/PassionOne-Black.ttf) format(truetype);
+}
+@font-face {
+    font-family: sriracha;
+src: url('fontes/Sriracha-Regular.ttf') format(truetype);
+font-weight: normal;
+}
+
+html, body {
+    min-height: 100vh;
+    border-color: rgb(177, 176, 176);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding: 30px;
+    font-variant: small-caps;
+    font-family: 'passionb';
+    font-size: 3em;
+}
+header > p {
+    padding: 30px;
+    font-size: small;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: sriracha;
+}
+section > p {
+    padding: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    /* Efeito paralax 
+    fixando a imagem */
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 2px 1px 0px black;
+}
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/*
+main {
+    width: 700px;
+    background-image: url(imagens/background001.jpg);
+    background-position: center;
+    font-family: sriracha;
+    font-size: 1.4em;
+}
+
+div > p {
+    width: 250px;
+    padding: 40px 20px 100px 20px;
+}
+#estrofe2 {
+    height: 50%;
+}#estrofe4 {
+    height: 50%;
+    background-image: url(imagens/background002.jpg);
+    background-position: center;
+    color: white;
+}
+*/
